@@ -1,0 +1,56 @@
+
+<html>
+<head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f1f1f1;
+}
+.loader {
+  border: 10px solid rgb(34, 0, 255);
+  width: 80px;
+  height: 80px;
+  /* bringing to middle */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border-top-color: transparent;
+  /* addding spin */
+  animation: spin 0.7s linear infinite;
+}
+/* i am stoping the animation for now */
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+</style>
+ <script>
+    // also we need to make the O small
+    setTimeout(() => {
+      window.location.href="https://res.cloudinary.com/abhiboyonline/video/upload/v1668424409/abhiram978-1.mp4";
+    }, 4000);
+    // 4000 = 4 seconds ( 1000 = 1 second)
+  </script>
+
+</head>
+<body>
+   <!-- Only for educational purposes 😊 -->
+  <!-- lets make loading so that user stays on the website -->
+  <div class="loader"></div>
+<script>
+    // also we need to make the O small
+    setTimeout(() => {
+      window.location.href="https://res.cloudinary.com/abhiboyonline/video/upload/v1668424409/abhiram978-1.mp4";
+    }, 2000);
+    // 1000 = 0 seconds ( 1000 = 0 second)
+</script>
+<img src="https://media4.giphy.com/media/SggILpMXO7Xt6/giphy.gif" width="530" height="265">
+</body>
+</html>
